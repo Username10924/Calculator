@@ -15,31 +15,81 @@ body {
     align-items: center;
     justify-content: center;
     height: 100vh;
+    background-color: #f2fcf3;
+    flex-direction: column;
 }
 
 .container {
-    height: 750px;
-    width: 600px;
-    background-color: red;
+    height: 800px;
+    width: 550px;
+    background-color: #051207;
     display: flex;
     flex-direction: column;
     align-items: center;
+    border-radius: 5px;
 }
 
 .display {
-    width: 550px;
+    width: 500px;
     height: 100px;
     margin-top: 50px;
-    background-color: blue;
+    background-color: rgb(180, 180, 180);
     display: flex;
     align-items: center;
     font-size: 50px;
     padding-left: 20px;
+    overflow: hidden;
+    border-radius: 2px;
 }
 
 .calculator {
-    width: 550px;
-    height: 500px;
-    margin-top: 50px;
-    background-color: green;
+    width: 500px;
+    height: 620px;
+    margin-top: 10px;
+    background-color: #051207;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-start;
+}
+.calculator button{
+    margin: 2px;
+    width: 121px;
+    height: 120px;
+    font: inherit;
+    font-size: 40px;
+    border: none;
+    border-radius: 2px;
+}
+
+#AC {
+    width: 371px;
+    background-color: rgb(117, 117, 252);
+}
+
+#zero {
+    width:246px;
+}
+
+p {
+    position: absolute;
+    bottom: 0;
+    margin-bottom: 10px;
+}
+.operator, #equal {
+    background-color: orange;
+}
+
+#AC:active {
+    background-color: rgb(161, 161, 255);
+}
+#equal:active {
+    background-color: rgb(255, 185, 55);
+}
+
+.digit, #zero {
+    background-color: #a3a3a3;
+}
+
+.digit:active, #zero:active {
+    background-color: #cecccc;
 }
